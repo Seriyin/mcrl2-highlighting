@@ -1,0 +1,33 @@
+{
+    "name": "mcrl2-highlighting",
+    "displayName": "mCRL2 highlighting",
+    "description": "Language support for mCRL2 files",
+    "version": "1.0.0",
+    "icon": "./icons/mcrl2.png",
+    "repository": {
+        "url": ""
+    },
+    "galleryBanner": {
+        "color": "#80b3ff"
+    },
+    "publisher": "Seriyin",
+    "engines": {
+        "vscode": "^1.8.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "mcrl2",
+            "aliases": ["mCRL2", "mcrl2"],
+            "extensions": [".mcrl2","mcf"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "mcrl2",
+            "scopeName": "source.mcrl2",
+            "path": "./syntaxes/mcrl2.tmLanguage.json"
+        }]
+    }
+}

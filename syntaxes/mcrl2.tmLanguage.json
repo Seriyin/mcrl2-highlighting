@@ -1,0 +1,95 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "mCRL2",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#storage"
+		},
+		{
+			"include": "#constants"
+		}, 
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#entity"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.mcrl2",
+					"match": "\\b(if|forall|exists)\\b"
+				},
+				{
+					"name": "keyword.other.mcrl2",
+					"match": "\\b(sort|init|proc|act|cons|map|var|eqn|lambda|glob|struct)\\b"
+				},
+				{
+					"name": "keyword.operator.mcrl2",
+					"match": "\\b(<=|->|<>|==|!=|\\|>|<\\||in|#|\\.|\\+\\+|\\+|\\*|-|!|div|mod|hide|rename|allow|block|comm|delay|mu|nu|pbes|yaled)\\b"
+				}
+			]
+		},
+		"entity": {
+			"patterns": [ 
+				{
+					"name": "entity.name.function.mcrl2",
+					"match": "\\b(eqn|lambda|map|whr|sum)\\b"
+				},
+				{
+					"name": "entity.name.type.mcrl2",
+					"match": "\\b(sort|cons|struct|val|var|glob)\\b"
+				},
+				{
+					"name": "entity.name.class.mcrl2",
+					"match": "\\b(init|proc|act)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.mcrl2",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.mcrl2",
+					"match": "\\\\."
+				}
+			]
+		},
+		"storage": {
+			"patterns": [
+				{
+					"name": "storage.type.mcrl2",
+					"match": "\\b(Bag|Bool|Int|List|Nat|Pos|Real|Set)\\b"
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.percentage.mcrl2",
+					"match": "[^\\]?%.*$"
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.language.mcrl2",
+					"match": "\\b(nil|tau|true|false|delta)\\b"
+				},
+				{
+					"name": "constant.numeric.mcrl2",
+					"match": "0|([1-9][0-9]*)"
+				}
+			]
+		}
+	},
+	"scopeName": "source.mcrl2"
+}
