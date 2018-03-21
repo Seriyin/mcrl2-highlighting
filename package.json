@@ -3,9 +3,9 @@
     "displayName": "mCRL2 highlighting",
     "description": "Language support for mCRL2 files",
     "version": "1.0.0",
-    "icon": "./icons/mcrl2.png",
+    "icon": "icons/mcrl2.png",
     "repository": {
-        "url": ""
+        "url": "https://github.com/Seriyin/mcrl2-highlighting"
     },
     "galleryBanner": {
         "color": "#80b3ff"
