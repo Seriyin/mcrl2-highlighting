@@ -15,7 +15,7 @@
         "vscode": "^1.8.0"
     },
     "categories": [
-        "Languages"
+        "Programming Languages"
     ],
     "contributes": {
         "languages": [{
