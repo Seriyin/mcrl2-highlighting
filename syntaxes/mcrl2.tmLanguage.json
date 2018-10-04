@@ -15,6 +15,9 @@
 			"include": "#strings"
 		},
 		{
+			"include": "#comments"
+		},
+		{
 			"include": "#entity"
 		}
 	],
@@ -73,8 +76,8 @@
 		"comments": {
 			"patterns": [
 				{
-					"name": "comment.line.percentage.mcrl2",
-					"match": "[^\\]?%.*$"
+					"name": "comment.line.percentage",
+					"match": "(?<!\\\\)(?:\\\\{2})*%.*$"
 				}
 			]
 		},
