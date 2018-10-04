@@ -34,7 +34,7 @@
 				},
 				{
 					"name": "keyword.operator.mcrl2",
-					"match": "\\b(<=|->|<>|==|!=|\\|>|<\\||in|#|\\.|\\+\\+|\\+|\\*|-|!|div|mod|hide|rename|allow|block|comm|delay|mu|nu|pbes|yaled)\\b"
+					"match": "(<=|->|<>|==|!=|\\|>|<\\||#|\\.|\\+\\+|\\+|\\*|-|!|&&|\\||=|\\b(in|div|mod|hide|rename|allow|block|comm|delay|mu|nu|pbes|yaled)\\b)"
 				}
 			]
 		},
