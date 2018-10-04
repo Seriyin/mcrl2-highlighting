@@ -15,6 +15,9 @@
 			"include": "#strings"
 		},
 		{
+			"include": "#comments"
+		},
+		{
 			"include": "#entity"
 		}
 	],
@@ -31,7 +34,7 @@
 				},
 				{
 					"name": "keyword.operator.mcrl2",
-					"match": "\\b(<=|->|<>|==|!=|\\|>|<\\||in|#|\\.|\\+\\+|\\+|\\*|-|!|div|mod|hide|rename|allow|block|comm|delay|mu|nu|pbes|yaled)\\b"
+					"match": "(<=|->|<>|==|!=|\\|>|<\\||#|\\.|\\+\\+|\\+|\\*|-|!|&&|\\||=|\\b(in|div|mod|hide|rename|allow|block|comm|delay|mu|nu|pbes|yaled)\\b)"
 				}
 			]
 		},
@@ -73,8 +76,8 @@
 		"comments": {
 			"patterns": [
 				{
-					"name": "comment.line.percentage.mcrl2",
-					"match": "[^\\]?%.*$"
+					"name": "comment.line.percentage",
+					"match": "(?<!\\\\)(?:\\\\{2})*%.*$"
 				}
 			]
 		},
